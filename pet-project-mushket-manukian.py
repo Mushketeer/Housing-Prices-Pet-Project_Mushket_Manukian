@@ -64,7 +64,7 @@ model.fit(X_train, y_train,
           eval_set=[(X_valid, y_valid)],
           verbose=False)
 
-# Делаем и цениваем прогноз
+# Делаем и оцениваем прогноз
 predictions = model.predict(X_valid)
 print("Mean Absolute Error: " + str(mean_absolute_error(predictions, y_valid)))
 
