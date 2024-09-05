@@ -70,7 +70,7 @@ print("Mean Absolute Error: " + str(mean_absolute_error(predictions, y_valid)))
 
 predictions_test = model.predict(X_test)
 
-# Сохраняем данные в csv-файл с названием "submission"
+# Сохраняем данные в csv-файл с названием 'submission'
 output = pd.DataFrame({'Id': X_test.index,
                        'SalePrice': predictions_test})
 output.to_csv('submission.csv', index=False)
